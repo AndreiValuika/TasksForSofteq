@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Task4Check\**" />
+    <Compile Remove="TaskFour\**" />
+    <Compile Remove="TaskThree\**" />
+    <Compile Remove="TaskTwo\**" />
+    <EmbeddedResource Remove="Task4Check\**" />
+    <EmbeddedResource Remove="TaskFour\**" />
+    <EmbeddedResource Remove="TaskThree\**" />
+    <EmbeddedResource Remove="TaskTwo\**" />
+    <None Remove="Task4Check\**" />
+    <None Remove="TaskFour\**" />
+    <None Remove="TaskThree\**" />
+    <None Remove="TaskTwo\**" />
+  </ItemGroup>
+
+</Project>
