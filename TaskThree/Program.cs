@@ -24,7 +24,7 @@ namespace TaskThree
 
         static void Step(int n, int mult) 
         {
-            if (n==0)
+            if (n == 0)
             {
                 maxMult = mult > maxMult ? mult : maxMult;
                 return;

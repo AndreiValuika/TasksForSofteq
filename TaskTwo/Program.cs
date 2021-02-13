@@ -8,25 +8,27 @@ namespace TaskTwo
         {
             System.Threading.Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en-US");
 
-            var wheels = Console.ReadLine().Split();
-            int weelsOnCar = Convert.ToInt32(wheels[0]);
-            int weels = Convert.ToInt32(wheels[1]);
+            var inputWheels = Console.ReadLine().Split();
+            int wheelsOnCar = Convert.ToInt32(inputWheels[0]);
+            int wheels = Convert.ToInt32(inputWheels[1]);
 
-            int[] weelsPoint = new int[weelsOnCar];
+            int[] wheelsPoint = new int[wheelsOnCar];
 
-            for (int i = 0; i < weelsOnCar; i++)
+            for (int i = 0; i < wheelsOnCar; i++)
             {
-                weelsPoint[i] = Convert.ToInt32(Console.ReadLine());
+                wheelsPoint[i] = Convert.ToInt32(Console.ReadLine());
             }
 
-            double pointForOne = 0d;
+            float pointForOne = 0f;
 
-            foreach (var item in weelsPoint)
+            // pointForOne shows how many "strength points" cars wheels lost for one kilometr.
+            foreach (var item in wheelsPoint)
             {
-                pointForOne += 1d / item;
+                pointForOne += 1f / item;
             }
 
-            double kilometers = weels / pointForOne;
+            float kilometers = wheels / pointForOne;
+            Console.WriteLine();
             Console.WriteLine(string.Format("{0:0.000}", kilometers));
         }
     }

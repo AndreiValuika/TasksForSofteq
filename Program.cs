@@ -14,7 +14,7 @@ namespace TasksForSofteq
             for (int i = 0; i < numberForTestCase; i++)
             {
                 double x = Convert.ToDouble(Console.ReadLine());
-                setOfEva[i] = GetFunctionEva(x);
+                setOfEva[i] = GetFunction(x);
             }
 
             foreach (var evalation in setOfEva)
@@ -22,7 +22,7 @@ namespace TasksForSofteq
                 Console.WriteLine(string.Format("{0:0.000}", evalation));
             }
         }
-        static double GetFunctionEva(double x) 
+        static double GetFunction(double x) 
         {
             return Math.Pow(x, 4) + 1.2 * Math.Pow(x, 3) - 20 * Math.Pow(x, 2) + 123.456;
         }
